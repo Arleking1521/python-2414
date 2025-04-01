@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{% for image in images %}
+<img src="{{image.image.url}}" width="300px">
+{% endfor %}
+<p>{{ post.title }}</p>
+<p>{{ post.content }}</p>
+<p>{{ post.time_stamp }}</p>
+{% endblock %}
